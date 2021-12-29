@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Type</th>
+                <th scope="col">Symbol</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price (USD)</th>
+                <th scope="col">Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in transaction_info %}
+                <tr>
+                    <td> {{ record["type"] }}</td>
+                    <td> {{ record["symbol"] }}</td>
+                    <td> {{ record["shares"] }}</td>
+                    <td> {{ usd(record["price"]) }}</td>
+                    <td> {{ record["timestamp"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
