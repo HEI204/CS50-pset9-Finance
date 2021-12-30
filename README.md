@@ -50,7 +50,7 @@ Every user after registered will have $10000 by default
 ![image](https://user-images.githubusercontent.com/78290169/147733999-048bbee0-b02e-48c1-82ba-4408c2e51351.png)
 
 - History page (Show all your action on the page such as sell, buy):
-![image](https://user-images.githubusercontent.com/78290169/147734015-d5d5eb0b-d177-4e9a-9d1b-c22c728a2fe6.png)
+![image](https://user-images.githubusercontent.com/78290169/147734241-a7f25038-90db-4376-ac1a-513b367f7419.png)
 
 - Add Cash:
 ![image](https://user-images.githubusercontent.com/78290169/147734058-51e9cb87-fed3-41b0-abc5-e4d372bf94b2.png)
