@@ -18,12 +18,37 @@ The target of this exercise:
 
 Apart from the function required, I also added some function to the website such as allow user to change their password and allow users to buy more shares or sell shares of stocks they already own via index itself, without having to type stocks’ symbols manually.
 
-## Tools
+## Tools:
 - Flask for backend development
 - HTML for website strcuture 
 - Bootstrap for design
 - <a href="https://iexcloud.io/">IEX API</a> to get the stocks valus in real time
 - sqlite3 for storing users information (username and hashed password) and the transaction record (bought or sold)
+
+## Website:
+- Login page:
+![image](https://user-images.githubusercontent.com/78290169/147714592-d4823736-11ad-450a-b210-29a6185d1825.png)
+
+- Register page:
+![image](https://user-images.githubusercontent.com/78290169/147714600-5cdaa2a6-07b3-43c6-9145-ccc22bdda35f.png)
+
+- Index page (after login your own accout):
+![image](https://user-images.githubusercontent.com/78290169/147714625-d0c55db0-b2a4-4580-82e3-c3831f005a0a.png)
+
+- Quote page (Input the stock symbol for checking the stock info):
+![image](https://user-images.githubusercontent.com/78290169/147714647-13237e35-7086-4283-9a39-87f5b95dce59.png)
+
+- Buy page (Input the stock symbol and number of shares to buy):
+![image](https://user-images.githubusercontent.com/78290169/147714669-2b86ce99-2355-4c30-9cfa-b90d39425783.png)
+
+- Sell page (Select the stock that you have bought in the drop-down list and input the number of shares to sell):
+![image](https://user-images.githubusercontent.com/78290169/147714696-bf31961f-c088-4ac1-a176-602e4b115441.png)
+
+- History page (Show all your action on the page such as sell, buy):
+![image](https://user-images.githubusercontent.com/78290169/147714709-0a236bf0-20af-446b-b98d-1deabffe9016.png)
+
+- Change password (Allow user to change their password but cannot input the new password same as current password):
+![image](https://user-images.githubusercontent.com/78290169/147714736-75e2526e-4512-4ce1-b848-cadadef408c0.png)
 
 ## Reference:
 - Bootstrap https://getbootstrap.com/docs/5.1/getting-started/introduction/
