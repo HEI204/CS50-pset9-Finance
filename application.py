@@ -76,12 +76,12 @@ def add_cash():
         return render_template("add_cash.html", user_cash=usd(user_cash))
 
     added_cash = request.form.get("added_cash")
-    new_total_cash = added_cash + user_cash
+    new_total_cash = float(added_cash) + float(user_cash)
     db.execute("UPDATE users SET cash = ? WHERE id = ?", new_total_cash, session["user_id"])
     db.execute("INSERT INTO purchase(user_id, type, symbol, name, shares, price) VALUES(?, ?, ?, ?, ?, ?)",
-                   session["user_id"], "ADD CASH", "N/A", "N/A", 1, new_total_cash)
+                   session["user_id"], "ADD CASH", "N/A", "N/A", 1, float(added_cash))
 
-    return render_template("add_cash.html")
+    return render_template("add_cash.html",user_cash=usd(new_total_cash))
 
 
 @app.route("/buy", methods=["GET", "POST"])
