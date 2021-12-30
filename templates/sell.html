@@ -9,7 +9,7 @@
         <div class="form-group">
             <select name="symbol">
                 <option selected disabled>Bought Stock</option>
-                {% for symbols in stock_symbol %}
+                {% for symbols in stock_symbol if symbols["symbol"] != "N/A" %}
                     {% if symbols["symbol"] == sell_symbol %}
                         <option selected>{{ symbols["symbol"] }}</option>
                     {% else %}

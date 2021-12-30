@@ -21,7 +21,9 @@
                     <td><b> {{ record["type"] }} </b></td>
                     <td> {{ record["symbol"] }}</td>
                     <td> {{ record["shares"] }}</td>
-                    {% if (record["type"] == "SELL") or (record["type"] == "ADD CASH") %}
+                    {% if record["type"] == "SELL" %}
+                        <td><font color="green"> +{{ usd(record["price"] * -record["shares"]) }} </font></td>
+                    {% elif record["type"] == "ADD CASH" %}
                         <td><font color="green"> +{{ usd(record["price"] * record["shares"]) }} </font></td>
                     {% elif record["type"] == "BUY" %}
                         <td><font color="red"> -{{ usd(record["price"] * record["shares"]) }} </font></td>
