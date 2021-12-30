@@ -38,22 +38,25 @@ Every user after registered will have $10000 by default
 ![image](https://user-images.githubusercontent.com/78290169/147714600-5cdaa2a6-07b3-43c6-9145-ccc22bdda35f.png)
 
 - Index page (after login your own accout):
-![image](https://user-images.githubusercontent.com/78290169/147714625-d0c55db0-b2a4-4580-82e3-c3831f005a0a.png)
+![image](https://user-images.githubusercontent.com/78290169/147733960-b2c3e44b-1eab-4dc1-b102-98768b220d9a.png)
 
 - Quote page (Input the stock symbol for checking the stock info):
-![image](https://user-images.githubusercontent.com/78290169/147714647-13237e35-7086-4283-9a39-87f5b95dce59.png)
+![image](https://user-images.githubusercontent.com/78290169/147733972-835636ec-cb12-4b1d-861f-6d9959ba5918.png)
 
 - Buy page (Input the stock symbol and number of shares to buy):
-![image](https://user-images.githubusercontent.com/78290169/147714669-2b86ce99-2355-4c30-9cfa-b90d39425783.png)
+![image](https://user-images.githubusercontent.com/78290169/147733981-27e16096-e237-463a-a805-2350ab5907ba.png)
 
 - Sell page (Select the stock that you have bought in the drop-down list and input the number of shares to sell):
-![image](https://user-images.githubusercontent.com/78290169/147714696-bf31961f-c088-4ac1-a176-602e4b115441.png)
+![image](https://user-images.githubusercontent.com/78290169/147733999-048bbee0-b02e-48c1-82ba-4408c2e51351.png)
 
 - History page (Show all your action on the page such as sell, buy):
-![image](https://user-images.githubusercontent.com/78290169/147714709-0a236bf0-20af-446b-b98d-1deabffe9016.png)
+![image](https://user-images.githubusercontent.com/78290169/147734015-d5d5eb0b-d177-4e9a-9d1b-c22c728a2fe6.png)
+
+- Add Cash:
+![image](https://user-images.githubusercontent.com/78290169/147734058-51e9cb87-fed3-41b0-abc5-e4d372bf94b2.png)
 
 - Change password (Allow user to change their password but cannot input the new password same as current password):
-![image](https://user-images.githubusercontent.com/78290169/147714736-75e2526e-4512-4ce1-b848-cadadef408c0.png)
+![image](https://user-images.githubusercontent.com/78290169/147734093-b6fd2d4c-78c4-47d4-a684-f6b7775afee2.png)
 
 ## Reference:
 - Bootstrap https://getbootstrap.com/docs/5.1/getting-started/introduction/
