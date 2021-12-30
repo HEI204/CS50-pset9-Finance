@@ -26,6 +26,8 @@ Apart from the function required, I also added some function to the website such
 - sqlite3 for storing users information (username and hashed password) and the transaction record (bought or sold)
 
 ## Website:
+
+Every user after registered will have $10000 by default
 - Login page:
 ![image](https://user-images.githubusercontent.com/78290169/147714592-d4823736-11ad-450a-b210-29a6185d1825.png)
 
