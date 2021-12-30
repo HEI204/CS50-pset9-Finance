@@ -65,6 +65,25 @@ def index():
                            total=usd(total), usd=usd)
 
 
+@app.route("/add_cash", methods=["GET", "POST"])
+@login_required
+def add_cash():
+    """Add Cash"""
+
+    user_cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])[0]["cash"]
+    # User reached route via GET (as by clicking a link or via redirect)
+    if request.method == "GET":
+        return render_template("add_cash.html", user_cash=usd(user_cash))
+
+    added_cash = request.form.get("added_cash")
+    new_total_cash = added_cash + user_cash
+    db.execute("UPDATE users SET cash = ? WHERE id = ?", new_total_cash, session["user_id"])
+    db.execute("INSERT INTO purchase(user_id, type, symbol, name, shares, price) VALUES(?, ?, ?, ?, ?, ?)",
+                   session["user_id"], "ADD CASH", "N/A", "N/A", 1, new_total_cash)
+
+    return render_template("add_cash.html")
+
+
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
 def buy():
