@@ -16,7 +16,7 @@ The target of this exercise:
   </li>
 </ul>
 
-Apart from the function required, I also added some function to the website: 
+Apart from the function required and the built in function provided in this exercise, I also added some function to the website: 
 - Allow user to change their password but cannot same as current password
 - Allow users to buy more shares or sell shares of stocks they already own via click the button on the index page, without having to type stocks’ symbols manually.
 - Allow users to add more cash into their account via the add cash page
