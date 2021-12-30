@@ -6,7 +6,7 @@
 
 {% block main %}
     <form action="/buy" method="post">
-        {% if not symbol %}
+        {% if not buy_symbol %}
             <div class="form-group">
                 <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Stock symbol" type="text" value = {{ buy_symbol }}>
             </div>
