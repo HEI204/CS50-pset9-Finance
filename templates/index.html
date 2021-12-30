@@ -17,7 +17,7 @@
             </tr>
         </thead>
         <tbody>
-            {% for record in user_stock_info %}
+            {% for record in user_stock_info if record["symbol"] != "N/A" %}
                 <tr>
                     <td> {{ record["symbol"] }}</td>
                     <td> {{ record["name"] }}</td>
