@@ -18,6 +18,7 @@ The target of this exercise:
 
 Apart from the function required and the built in function provided in this exercise, I also added some function to the website: 
 - Allow user to change their password but cannot same as current password
+- Allow user to check their profit for the stock that they have bought
 - Allow users to buy more shares or sell shares of stocks they already own via click the button on the index page, without having to type stocks’ symbols manually.
 - Allow users to add more cash into their account via the add cash page
 
@@ -38,7 +39,7 @@ Every user after registered will have $10000 by default
 ![image](https://user-images.githubusercontent.com/78290169/147714600-5cdaa2a6-07b3-43c6-9145-ccc22bdda35f.png)
 
 - Index page (after login your own accout):
-![image](https://user-images.githubusercontent.com/78290169/147733960-b2c3e44b-1eab-4dc1-b102-98768b220d9a.png)
+![image](https://user-images.githubusercontent.com/78290169/147842674-aff20c29-7089-41b0-a239-319b587252c9.png)
 
 - Quote page (Input the stock symbol for checking the stock info):
 ![image](https://user-images.githubusercontent.com/78290169/147733972-835636ec-cb12-4b1d-861f-6d9959ba5918.png)
@@ -50,7 +51,7 @@ Every user after registered will have $10000 by default
 ![image](https://user-images.githubusercontent.com/78290169/147733999-048bbee0-b02e-48c1-82ba-4408c2e51351.png)
 
 - History page (Show all your action on the page such as sell, buy):
-![image](https://user-images.githubusercontent.com/78290169/147734241-a7f25038-90db-4376-ac1a-513b367f7419.png)
+![image](https://user-images.githubusercontent.com/78290169/147842677-19c801c2-7d85-4a20-b267-92ba18bcabd5.png)
 
 - Add Cash:
 ![image](https://user-images.githubusercontent.com/78290169/147734058-51e9cb87-fed3-41b0-abc5-e4d372bf94b2.png)
