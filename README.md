@@ -39,6 +39,8 @@ Every user after registered will have $10000 by default
 ![image](https://user-images.githubusercontent.com/78290169/147714600-5cdaa2a6-07b3-43c6-9145-ccc22bdda35f.png)
 
 - Index page (after login your own accout):
+it will show about your stock info with the price when you bought and total price for total number of share when you bought. Also,
+it will show about the latest profit for your stock 
 ![image](https://user-images.githubusercontent.com/78290169/147842674-aff20c29-7089-41b0-a239-319b587252c9.png)
 
 - Quote page (Input the stock symbol for checking the stock info):
