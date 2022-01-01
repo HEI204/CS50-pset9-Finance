@@ -41,7 +41,7 @@ db = SQL("sqlite:///finance.db")
 
 # Make sure API key is set
 # if not os.environ.get("API_KEY"):
-#     raise RuntimeError("API_KEY not set")
+#    raise RuntimeError("API_KEY not set")
 
 
 @app.route("/")
@@ -62,7 +62,7 @@ def index():
         total += stock["price"] * stock["total_shares"]
 
     return render_template("index.html", user_stock_info=user_stock_info, user_cash=usd(user_cash),
-                           total=usd(total), usd=usd)
+                           total=usd(total), usd=usd, lookup=lookup, percentage=percentage)
 
 
 @app.route("/add_cash", methods=["GET", "POST"])
@@ -360,4 +360,9 @@ def errorhandler(e):
 # Listen for errors
 for code in default_exceptions:
     app.errorhandler(code)(errorhandler)
+
+# Handle percentage output for index page
+def percentage(value):
+    """Format value as percentage. """
+    return f"{value:,.2f}%"
 

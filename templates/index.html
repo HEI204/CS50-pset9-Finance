@@ -13,6 +13,7 @@
                 <th scope="col">Shares</th>
                 <th scope="col">Price (USD)</th>
                 <th scope="col">Total Price (USD)</th>
+                <th scope="col">Profit</th>
                 <th scope="col" colspan="2">Action</th
             </tr>
         </thead>
@@ -24,6 +25,22 @@
                     <td> {{ record["total_shares"] }}</td>
                     <td> {{ usd(record["price"]) }}</td>
                     <td> {{ usd(record["total_shares"] * record["price"]) }}</td>
+                    {% if lookup(record["symbol"])["price"] < record["price"] %}
+                        <td><font color="red"> {{ percentage((((lookup(record["symbol"])["price"] * record["total_shares"]) -
+                                 (record["price"] * record["total_shares"]))
+                                 / (record["price"] * record["total_shares"])) * 100)}}
+                        </td>
+                    {% elif lookup(record["symbol"])["price"] > record["price"] %}
+                        <td><font color="green"> +{{ percentage((((lookup(record["symbol"])["price"] * record["total_shares"]) -
+                                 (record["price"] * record["total_shares"]))
+                                 / (record["price"] * record["total_shares"])) * 100)}}
+                        </font></td>
+                    {% else %}
+                        <td><font color="grey"> {{ percentage((((lookup(record["symbol"])["price"] * record["total_shares"]) -
+                                 (record["price"] * record["total_shares"]))
+                                 / (record["price"] * record["total_shares"])) * 100)}}
+                        </td>
+                    {% endif %}
                     <td> <button class="btn" type="submit">
                         <a href="{{ url_for('buy', buy_symbol=record["symbol"])}}">Buy</a>
                         </button>

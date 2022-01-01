@@ -12,6 +12,7 @@
                 <th scope="col">Symbol</th>
                 <th scope="col">Shares</th>
                 <th scope="col">Price (USD)</th>
+                <th scope="col">Total Price (USD)</th>
                 <th scope="col">Time</th>
             </tr>
         </thead>
@@ -21,6 +22,7 @@
                     <td><b> {{ record["type"] }} </b></td>
                     <td> {{ record["symbol"] }}</td>
                     <td> {{ record["shares"] }}</td>
+                    <td> {{ usd(record["price"]) }} </td>
                     {% if record["type"] == "SELL" %}
                         <td><font color="green"> +{{ usd(record["price"] * -record["shares"]) }} </font></td>
                     {% elif record["type"] == "ADD CASH" %}
