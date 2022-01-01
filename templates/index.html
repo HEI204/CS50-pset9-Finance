@@ -36,7 +36,7 @@
                                  / (record["price"] * record["total_shares"])) * 100)}}
                         </font></td>
                     {% else %}
-                        <td><font color="grey"> {{ percentage((((lookup(record["symbol"])["price"] * record["total_shares"]) -
+                        <td><font color="blue"> {{ percentage((((lookup(record["symbol"])["price"] * record["total_shares"]) -
                                  (record["price"] * record["total_shares"]))
                                  / (record["price"] * record["total_shares"])) * 100)}}
                         </td>
