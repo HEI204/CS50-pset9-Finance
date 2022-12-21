@@ -31,6 +31,8 @@ Apart from the function required and the built in function provided in this exer
 
 ## Website:
 
+Test account: user012 ; password: 123456 <br><br>
+
 Every user after registered will have $10000 by default
 - Login page:
 ![image](https://user-images.githubusercontent.com/78290169/147714592-d4823736-11ad-450a-b210-29a6185d1825.png)
